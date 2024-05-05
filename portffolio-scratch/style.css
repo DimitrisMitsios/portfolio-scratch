@@ -3,12 +3,13 @@
   }
   
   body {
+    
     font-family: "outfit";
     background-color: rgb(12, 12, 58) !important;
   }
   
   .nav {
-    font-size: inherit;
+    font-size: inherit !important;
     font-weight: 800;
     font-family: inherit;
     height: 100%;
@@ -25,9 +26,9 @@
   
   .nav > .nav-header > .nav-title {
     display: inline-block;
-    font-size: 40px;
+    font-size: 30px;
     color: #fff;
-    padding: 10px 10px 10px 10px;
+    padding: 13px 13px 13px 13px;
   }
   
   .nav > .nav-btn {
@@ -39,12 +40,12 @@
     margin-top: 15px;
     display: inline;
     float: right;
-    font-size: 30px;
+    font-size: 25px;
   }
   
   .nav > .nav-links > a {
     margin-top: 10px;
-    padding: 13px 10px 13px 10px;
+    padding: 30px;
     text-decoration: none;
     color: #efefef;
   }
@@ -59,13 +60,14 @@
     display: none;
   }
   
-  @media (max-width:800px) {
+  @media (max-width:980px) {
     .nav > .nav-btn {
       display: inline-block;
       position: absolute;
       right: 0px;
       top: 0px;
     }
+
     .nav > .nav-btn > label {
       display: inline-block;
       width: 50px;
@@ -104,3 +106,25 @@
       overflow-y: auto;
     }
   }
+  .typewrite{
+    font-size: 40px;    
+    color: cyan !important;
+  }
+  .tw {
+    margin-left: 10px;
+    font-size: 40px;
+    font-family: inherit !important;
+    font-weight: 800;
+    color:white !important;
+  }
+
+ .container{
+  display: block;
+  float: right;
+  top: -200px;
+  margin-left: auto;
+  margin-right: auto;
+
+ }
+  
+  
