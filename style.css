@@ -13,11 +13,7 @@
   html {
     scroll-behavior: smooth;
   }
-
-  #about-section {
-    padding-top: 100px; 
-    margin-top: -100px; 
-}
+  
   .nav {
     font-size: inherit !important;
     font-weight: 800;
@@ -121,6 +117,7 @@
       overflow-y: auto;
     }
   }
+  
   .typewrite{
     font-size: 40px;    
     color: cyan !important;
@@ -140,6 +137,7 @@
   }
 
  .container{
+  padding-bottom: -250px;
   display: block;
   float: right;
   margin-top: -500px;
@@ -170,10 +168,10 @@
  @media only screen and (max-width: 1200px) {
   .container {
     
-    max-width: 100%; 
-    max-height: 100%;
+    max-width: 120%; 
+    max-height: 120%;
     margin-top: -30px; 
-    margin-left: -200px; 
+    margin-left: -245px; 
     float: left; 
   }
 } 
@@ -184,9 +182,9 @@
 
 
 .tw2{
-  padding-top: 20%;
+  padding-top: 20px;
+  font-size: 45px;
   margin-left: 10px;
-  font-size: 40px;
   font-family: inherit !important;
   font-weight: 800;
   color:white !important;
