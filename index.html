@@ -1,211 +1,83 @@
-* {
-    box-sizing: border-box;
-  }
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mitsios'Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;700;800&display=swap"
+  />
+  <link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap"
+  />
+
+</head>
+<body>
+    <div class="nav">
+    <input type="checkbox" id="nav-check">
+    <div class="nav-header">
+      <div class="nav-title">
+        Mitsios' Portfolio
+      </div>
+    </div>
+    <div class="nav-btn">
+      <label for="nav-check">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+    </div>
   
-  body {
-    
-    font-family: "outfit";
-    background-color: rgb(12, 12, 58) !important;
-    margin: 0;
-    overflow-x: hidden;   
-  }
+    <div class="nav-links">
+      <a href="#">Home</a>
+      <a href="#about-section">About</a>
+      <a href="#">Projects</a>
+      <a href="#">Contact us</a>
+    </div>
+  </div>
 
-  html {
-    scroll-behavior: smooth;
-  }
-
-  #about-section {
-    padding-top: 100px; 
-    margin-top: -100px; 
-}
-  .nav {
-    font-size: inherit !important;
-    font-weight: 800;
-    font-family: inherit;
-    height: 100%;
-    width: 100%;
-    background-color: rgb(12, 12, 58);
-    position: relative;
-    border-bottom: 2px solid transparent;
-    border-color: white;
-  }
   
-  .nav > .nav-header {
-    display: inline;
-  }
+  <h1 class="tw">
+    <br>
+    Hi,<br> I am
+    <a href="" class="typewrite" data-period="2000" data-type='[" Dimitris!", "Mitsios!"]'>
+      <span class="wrap"></span>
+    </a>
+    <br>And I Am A <span style="color: cyan;">Web Developer</span><br>Based In <span style="color: cyan;">Greece!</span>
+
+  </h1>
   
-  .nav > .nav-header > .nav-title {
-    display: inline-block;
-    font-size: 30px;
-    color: #fff;
-    padding: 13px 13px 13px 13px;
-  }
-  
-  .nav > .nav-btn {
-    display: none;
-    margin-top: 10px;
-  }
-  
-  .nav > .nav-links {
+  <h2 class="about">Lorem ipsum dolor sit, amet consectetur adipisicing elit. <br>Placeat, fuga. Saepe eius architecto suscipit ad beatae, labore<br> ab vel praesentium doloremque sunt ea eos quasi nulla cum<br> illum possimus expedita?
 
-    margin-top: 15px;
-    display: inline;
-    float: right;
-    font-size: 25px;
-  }
-  
-  .nav > .nav-links > a {
-    margin-top: 5%;
-    padding: 18px;
-    padding-left: 30px;
-    text-decoration: none;
-    color: #efefef;
-    transition: all 0.3s ease; 
-}
+  </h2>
+<br>
+  <div class="container">
 
-.nav > .nav-links > a:hover {
-    background-color: rgb(12, 12, 57);
-    margin-top: 0; 
-}
-  
-  .nav > #nav-check{
-    display: none;
+    <img src="public/portps-1@2x.png" alt="Photo Of A Programmer" height="750px" width="750px" />
 
-  }
-  
-  @media (max-width:980px) {
-    .nav > .nav-btn {
-      display: inline-block;
-      position: absolute;
-      right: 0px;
-      top: 0px;
-      
-    }
+  </div>
 
-    .nav > .nav-btn > label {
-      display: inline-block;
-      width: 50px;
-      height: 50px;
-      padding: 13px;
-      
-    }
-    .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
-    background-color: rgb(12, 12, 50);        
-    }
-    .nav > .nav-btn > label > span {
-      display: block;
-      width: 25px;
-      height: 10px;
-      border-top: 1px solid #eee;
-    }
-    .nav > .nav-links {
-      position: absolute;
-      display:block;
-      width: 100%;
-      background-color: rgb(12, 12, 50);
-      height: 0px;
-      transition: all 0.3s ease-in;
-      overflow-y: hidden;
-      top: 50px;
-      left: 0px;
-    }
-    .nav > .nav-links > a {
-      display: block;
-      width: 100%;
-    }
-    .nav > #nav-check:not(:checked) ~ .nav-links {
-      height: 0px;
-    }
-    .nav > #nav-check:checked ~ .nav-links {
-      height: calc(100vh - 50px);
-      overflow-y: auto;
-    }
-  }
-  .typewrite{
-    font-size: 40px;    
-    color: cyan !important;
-  }
-  .tw {
-    margin-left: 10px;
-    font-size: 40px;
-    font-family: inherit !important;
-    font-weight: 800;
-    color:white !important;
-  }
+<!--ABOUT SECTION-->
+    <section class="about-container" id="about-section" >
+                 
+      <h1 class="tw2" >
+        Sooo, whoami?
+      </h1>
 
-  .about{
-    padding-left: 10px;
-    color: white !important;
-    font-family: inherit !important;
-  }
+        <h2 class="about-text"  >
+            Hello! I'm Dimitris Mitsios, a passionate web developer from Greece. I specialize in creating dynamic and beautiful web pages. <br>I have been in the field for over 5 years, and have loved every minute of it.</p>
+            My skills include HTML, CSS, JavaScript, and various front-end frameworks like React and Vue.js. I also have experience in backend development with Node.js and Express. I enjoy solving complex problems and turning ideas into reality.</p>
+            When I'm not coding, I love exploring new technologies, traveling, and spending time with my family and friends. I'm always excited to learn more and take on new challenges.</p>
+        </h2>
+        <img src="public/portps-1@2x.png" alt="Photo Of A Programmer" height="750px" width="750px"/>
+    </section>
 
- .container{
-  display: block;
-  float: right;
-  margin-top: -500px;
-  margin-left: auto;
-  margin-right: -75px;
- }
-
- @media only screen and (max-width: 1200px) {
-  img {
-  width:100%;
-  height:100%;
-  margin-left: 200px;
-  
-  }
-  }
-
- @media only screen and (max-width: 1200px) {
-  .tw{
-    margin-top: -30px;
-    margin-left: 10px;
-    font-size: 40px;
-    font-family: inherit !important;
-    font-weight: 800;
-    color:white !important;
-  }
- }
-
- @media only screen and (max-width: 1200px) {
-  .container {
-    
-    max-width: 100%; 
-    max-height: 100%;
-    margin-top: -30px; 
-    margin-left: -200px; 
-    float: left; 
-  }
-} 
-  
-
-/*ABOUT ME CSS STARTS HERE*/
+  <script src="script.js"></script>
 
 
 
-.tw2{
-  padding-top: 20%;
-  margin-left: 10px;
-  font-size: 40px;
-  font-family: inherit !important;
-  font-weight: 800;
-  color:white !important;
-}
-
-@media only screen and (max-width: 1368px) {
-  .tw2{
-    text-align: left !important;
-    padding-top: 90%;    
-    font-size: 40px;
-    font-family: inherit !important;
-    font-weight: 800;
-    color:white !important;
-  }
- }
-
-.about-text{
-  float: right; 
-  padding-left: 10px;
-  color: white !important;
-  font-family: inherit !important;
-}
+    </body>
+</html>
